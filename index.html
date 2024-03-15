@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Cards</title>
+    <link
+      href="https://fonts.bunny.net/css?family=Quicksand:300,regular,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-normalize@latest/modern-normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font-style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Welcome to our Shoe Store</h1>
+    </header>
+    <main>
+      <h2>New Arrivals</h2>
+      <section class="products">
+        <!-- Card 1 -->
+        <div class="card">
+          <section class="section-img">
+            <img
+              class="feather-edge"
+              src="photos/shoes-blue.avif"
+              alt="Image of blue Asics shoes"
+            />
+            <p class="free-shipping">Free Shipping!</p>
+            <p class="photo-by">Photo by: Maksim Larin</p>
+            <div class="blur-overlay"></div>
+          </section>
+          <section class="card-text">
+            <h3>Asics</h3>
+            <p>
+              Suede fabric pointed toe stylish cut front low heel sharp on-trend
+              toe point raised heel drop sides unique silhouette. Bow detail
+              metallic eyelets leather lining luxurious finish classic courts
+              formal slingback square toe contrasting cap. Lace up fastening bow
+              detailing high stiletto heel leather lining beautiful lace upper
+              elegant peep toe t-bar strap. Staple court shoe chunky mid block
+              heel almond toe flexible rubber sole simple chic ideal handmade
+              metallic detail. Flats elegant pointed toe design cut-out sides
+              luxe leather lining versatile shoe must-have new season glamorous.
+            </p>
+          </section>
+          <section class="add-to-cart">
+            <h4 class="prize">$65 USD</h4>
+            <form class="dropdown" action="/action_page.php">
+              <div>
+                <label for="Size">Size:</label>
+                <select class="select" name="Size" id="Size">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div>
+                <label for="Quantity">Quantity:</label>
+                <select class="select" name="Quantity" id="Quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div class="color-option">
+                <span class="color">Colour:</span>
+                <div class="circles">
+                  <div class="circle-blue-dark"></div>
+                  <div class="circle-red"></div>
+                  <div class="circle-black"></div>
+                </div>
+              </div>
+            </form>
+
+            <button class="addtocart-button">
+              <div class="pretext">
+                <i class="fas fa-cart-plus"></i>
+                <h4>Add to cart</h4>
+              </div>
+            </button>
+          </section>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <section class="section-img">
+            <img class="feather-edge" src="photos/shoes-white.avif" />
+            <p class="photo-by">Photo by: Daniel Storek</p>
+            <div class="blur-overlay"></div>
+          </section>
+          <section class="card-text">
+            <h3>Adidas</h3>
+            <p>
+              Effortless comfortable full leather lining eye-catching unique
+              detail to the toe low 'cut-away' sides clean and sleek. Polished
+              finish elegant court shoe work duty stretchy slingback strap mid
+              kitten heel this ladylike more text
+            </p>
+          </section>
+          <section class="add-to-cart">
+            <h4 class="prize">$30 USD</h4>
+            <form class="dropdown" action="/action_page.php">
+              <div>
+                <label for="Size">Size:</label>
+                <select class="select" name="Size" id="Size">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div>
+                <label for="Quantity">Quantity:</label>
+                <select class="select" name="Quantity" id="Quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div class="color-option">
+                <span class="color">Colour:</span>
+                <div class="circles">
+                  <div class="circle-green" id="red"></div>
+                  <div class="circle-blue" id="green"></div>
+                  <div class="circle-pink" id="white"></div>
+                </div>
+              </div>
+            </form>
+
+            <button class="addtocart-button">
+              <div class="pretext">
+                <i class="fas fa-cart-plus"></i>
+                <h4>Add to cart</h4>
+              </div>
+            </button>
+          </section>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <section class="section-img">
+            <img class="feather-edge" src="photos/shoes-green.avif" />
+            <p class="free-shipping">Just One Left!</p>
+            <p class="photo-by">Photo by: felipepelaquim</p>
+            <div class="blur-overlay"></div>
+          </section>
+          <section class="card-text">
+            <h3>New Balance</h3>
+            <p>
+              Suede fabric pointed toe stylish cut front low heel sharp on-trend
+              toe point raised heel drop sides unique silhouette. Bow detail
+              metallic eyelets leather lining luxurious finish classic courts
+              formal slingback square more text
+            </p>
+          </section>
+          <section class="add-to-cart">
+            <h4 class="prize">$45 USD</h4>
+            <form class="dropdown" action="/action_page.php">
+              <div>
+                <label for="Size">Size:</label>
+                <select class="select" name="Size" id="Size">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div>
+                <label for="Quantity">Quantity:</label>
+                <select class="select" name="Quantity" id="Quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div class="color-option">
+                <span class="color">Colour:</span>
+                <div class="circles">
+                  <div class="circle-red-dark"></div>
+                  <div class="circle-black-white"></div>
+                </div>
+              </div>
+            </form>
+
+            <button class="addtocart-button">
+              <div class="pretext">
+                <i class="fas fa-cart-plus"></i>
+                <h4>Add to cart</h4>
+              </div>
+            </button>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

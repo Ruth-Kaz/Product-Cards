@@ -1,0 +1,373 @@
+:root {
+  --background-color: rgb(245, 245, 245);
+  --background-product: rgb(255, 255, 255);
+  --background-button: rgb(72, 95, 185);
+  --highlight: rgba(119, 139, 216, 0.6);
+  --text-heading: rgb(51, 51, 51);
+  --text-regular: rgb(126, 126, 126);
+  --schriftgröße: 1rem;
+  --gap: 1rem;
+  --radius-außen: 1.5rem;
+  --radius-innen: 0.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand";
+  background-color: var(--background-color);
+  color: var(--text-regular);
+}
+
+main {
+  max-width: 94%;
+  margin: 0 auto 5rem;
+}
+header {
+  margin-bottom: 10rem;
+  height: 35vh;
+  background-color: black;
+  background-image: url(./photos/shoes-blue.avif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(65%);
+  mask-image: linear-gradient(to bottom, white 60%, transparent 100%);
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: "Reem Kufi";
+  font-weight: 400;
+  color: var(--text-heading);
+}
+
+h1 {
+  color: var(--background-product);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: "Quicksand";
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+  transition: 2s;
+}
+
+.card {
+  display: block;
+  box-shadow: 0 10px 30px 0px rgba(126, 126, 126, 0.2);
+  border-radius: var(--radius-außen);
+  transition: 1s ease-in-out;
+  max-width: 100%;
+  padding-bottom: 2.5%;
+  font-size: var(--schriftgröße);
+  background-color: var(--background-product);
+}
+
+.section-img {
+  position: relative;
+}
+
+.products .card .section-img > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.feather-edge {
+  box-shadow: inset 0 -2em 3em -2em #000;
+}
+
+.free-shipping {
+  margin: 0;
+  position: absolute;
+  top: 6%;
+  right: 4%;
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 0.1rem 0.65rem;
+  border-radius: 0.3rem;
+  color: var(--text-heading);
+  font-family: "Reem Kufi";
+  font-size: 0.85rem;
+  word-spacing: 0.12rem;
+}
+
+.photo-by {
+  margin: 0%;
+  font-size: 0.7rem;
+  color: var(--text-regular);
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
+}
+
+.card-text {
+  max-width: 92%;
+  margin: 2rem auto;
+}
+
+.products .card .card-text > p {
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  _max-width: 200px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  color: var(--text-regular);
+}
+
+.add-to-cart {
+  background-color: var(--background-color);
+  max-width: 92%;
+  border-radius: var(--radius-außen);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prize {
+  text-align: center;
+  background-color: var(--background-product);
+  max-width: 100%;
+  border-radius: var(--radius-innen);
+  padding: 0.6rem;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.dropdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-start;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.dropdown > div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--text-regular);
+  font-weight: 400;
+}
+
+.pretext {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.1rem 0;
+}
+
+.pretext > h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.select {
+  font-size: 0.9rem;
+  border: 0.01rem solid rgba(0, 0, 0, 0.09);
+  padding: 0.15rem 1.8rem 0.15rem 0.15rem;
+  border-radius: 0.3rem;
+}
+
+.color-option {
+  margin: 1.5rem 0;
+}
+
+.color-option .circles {
+  display: flex;
+}
+
+/* card 1 */
+.circle-blue-dark {
+  height: 25px;
+  width: 25px;
+  background: #1f55af;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.circle-red {
+  height: 25px;
+  width: 25px;
+  background: #da4841;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.circle-black {
+  height: 25px;
+  width: 25px;
+  background: #000;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+/* Card 2 */
+.circle-green {
+  height: 25px;
+  width: 25px;
+  background: linear-gradient(90deg, #989737 50%, black 50%);
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.circle-blue {
+  height: 25px;
+  width: 25px;
+  background: linear-gradient(90deg, #578bd8 50%, black 50%);
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.circle-pink {
+  height: 25px;
+  width: 25px;
+  background: linear-gradient(90deg, #d4668e 50%, black 50%);
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+/* Card 3 */
+.circle-red-dark {
+  height: 25px;
+  width: 25px;
+  background: linear-gradient(90deg, #ce3329 50%, white 50%);
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.circle-black-white {
+  height: 25px;
+  width: 25px;
+  background: linear-gradient(90deg, black 50%, white 50%);
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.circle-blue-dark,
+.circle-red-dark,
+.circle-black,
+.circle-green,
+.circle-blue,
+.circle-pink,
+.circle-red-dark,
+.circle-black-white {
+  border: 1px solid rgb(215, 214, 214);
+}
+
+.circle-blue-dark:hover,
+.circle-red-dark:hover,
+.circle-black:hover,
+.circle-green:hover,
+.circle-blue:hover,
+.circle-pink:hover,
+.circle-red-dark:hover,
+.circle-black-white:hover {
+  outline: 4px solid var(--highlight);
+}
+
+.addtocart-button {
+  font-weight: 500;
+  font-family: "Quicksand";
+  font-size: 1.3rem;
+  text-align: center;
+  max-width: 100%;
+  background-color: var(--background-button);
+  color: var(--background-product);
+  border: none;
+  border-radius: var(--radius-innen);
+  text-decoration: none;
+  padding: 0.6rem;
+  margin: 0rem 1rem 1rem 1rem;
+  transition: 0.7s;
+}
+
+.addtocart-button:hover {
+  box-shadow: 0 10px 30px 0px rgba(43, 29, 94, 0.5);
+  scale: 1.01;
+}
+
+.feather-edge {
+  mask-image: linear-gradient(to bottom, white 60%, transparent 100%);
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    max-width: 65ch;
+    margin: 0 auto 5rem;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .card {
+    display: block;
+    box-shadow: 0 10px 30px 0px rgba(126, 126, 126, 0.2);
+    border-radius: var(--radius-außen);
+    transition: 1s ease-in-out;
+    max-width: 100%;
+    padding-bottom: 2.5%;
+    font-size: var(--schriftgröße);
+    background-color: var(--background-product);
+  }
+  .products .card .card-text > p {
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    _max-width: 200px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: var(--text-regular);
+  }
+}
